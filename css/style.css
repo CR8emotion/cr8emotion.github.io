@@ -1,0 +1,73 @@
+/* 기본 세팅 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+}
+
+/* 제목 스타일 */
+h1, h2, h3 {
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   팔레트 1: 별빛 네이비
+================================= */
+body.theme-1 {
+  background: linear-gradient(180deg, #0D1B2A, #1B263B, #415A77);
+  color: #E0E1DD;
+}
+body.theme-1 a { color: #A3C9F7; }
+body.theme-1 a:hover { color: #FFFFFF; }
+
+/* ===============================
+   팔레트 2: 라벤더 드림
+================================= */
+body.theme-2 {
+  background: linear-gradient(180deg, #2E1A47, #6A4C93, #9A8C98);
+  color: #F2E9E4;
+}
+body.theme-2 a { color: #D8B4E2; }
+body.theme-2 a:hover { color: #FFFFFF; }
+
+/* ===============================
+   팔레트 3: 은빛 별빛
+================================= */
+body.theme-3 {
+  background: linear-gradient(180deg, #1C1C1C, #2E2E3A, #7D7C84);
+  color: #E6E6E6;
+}
+body.theme-3 a { color: #B0B0B0; }
+body.theme-3 a:hover { color: #FFFFFF; }
+
+/* ===============================
+   팔레트 4: 오로라 블루
+================================= */
+body.theme-4 {
+  background: linear-gradient(180deg, #0F2027, #203A43, #2C5364);
+  color: #FFFFFF;
+}
+body.theme-4 a { color: #7ED6DF; }
+body.theme-4 a:hover { color: #FFFFFF; }
+
+/* ===============================
+   팔레트 5: 스타더스트
+================================= */
+body.theme-5 {
+  background: linear-gradient(180deg, #1B0033, #3D0066, #6600CC);
+  color: #CC99FF;
+}
+body.theme-5 a { color: #FFB7FF; }
+body.theme-5 a:hover { color: #FFFFFF; }
+
