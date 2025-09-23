@@ -1,73 +1,86 @@
-/* 기본 세팅 */
+/* ==============================
+   Stellaria Style Base
+   - Base: 별빛 네이비 (#0D1B2A, #1B263B, #415A77)
+   - Accent: 라벤더 드림 (#6A4C93, #9A8C98, #F2E9E4)
+================================= */
+
+/* 기본 설정 */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.6;
+  background: linear-gradient(180deg, #0D1B2A, #1B263B, #415A77);
+  color: #E0E1DD;
 }
 
-/* 제목 스타일 */
+/* 제목 */
 h1, h2, h3 {
   font-weight: 600;
-  margin: 0.5em 0;
+  margin: 0.8em 0;
+  color: #FFFFFF;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
-/* 링크 스타일 */
+/* 링크 */
 a {
+  color: #D8B4E2; /* 라벤더 포인트 */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover {
-  text-decoration: underline;
+  color: #F2E9E4; /* 부드러운 화이트 */
+  text-shadow: 0 0 6px rgba(216,180,226,0.7);
 }
 
-/* ===============================
-   팔레트 1: 별빛 네이비
-================================= */
-body.theme-1 {
-  background: linear-gradient(180deg, #0D1B2A, #1B263B, #415A77);
-  color: #E0E1DD;
+/* 버튼 */
+.button {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #6A4C93, #9A8C98);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
-body.theme-1 a { color: #A3C9F7; }
-body.theme-1 a:hover { color: #FFFFFF; }
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(106, 76, 147, 0.5);
+}
 
-/* ===============================
-   팔레트 2: 라벤더 드림
-================================= */
-body.theme-2 {
-  background: linear-gradient(180deg, #2E1A47, #6A4C93, #9A8C98);
+/* 카드 (Glassmorphism) */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5em;
+  margin: 1em 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   color: #F2E9E4;
 }
-body.theme-2 a { color: #D8B4E2; }
-body.theme-2 a:hover { color: #FFFFFF; }
 
-/* ===============================
-   팔레트 3: 은빛 별빛
-================================= */
-body.theme-3 {
-  background: linear-gradient(180deg, #1C1C1C, #2E2E3A, #7D7C84);
-  color: #E6E6E6;
+/* 네비게이션 */
+nav {
+  background: rgba(13, 27, 42, 0.9);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-body.theme-3 a { color: #B0B0B0; }
-body.theme-3 a:hover { color: #FFFFFF; }
-
-/* ===============================
-   팔레트 4: 오로라 블루
-================================= */
-body.theme-4 {
-  background: linear-gradient(180deg, #0F2027, #203A43, #2C5364);
-  color: #FFFFFF;
+nav a {
+  margin: 0 0.8em;
+  font-weight: 500;
 }
-body.theme-4 a { color: #7ED6DF; }
-body.theme-4 a:hover { color: #FFFFFF; }
 
-/* ===============================
-   팔레트 5: 스타더스트
-================================= */
-body.theme-5 {
-  background: linear-gradient(180deg, #1B0033, #3D0066, #6600CC);
-  color: #CC99FF;
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.9em;
+  color: #9A8C98;
+  background: rgba(27, 38, 59, 0.8);
+  margin-top: 2em;
 }
-body.theme-5 a { color: #FFB7FF; }
-body.theme-5 a:hover { color: #FFFFFF; }
-
