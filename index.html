@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- Component: Head -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stellaria</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
-<!-- Navigation Bar -->
+
+<!-- Component: GlobalNav -->
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="characters.html">Characters</a>
-  <a href="project-history.md">Project History</a>
+  <a href="project-history.html">Project History</a>
+  <a href="structure.html">Structure</a>
   <a href="https://github.com/CR8emotion/cr8emotion.github.io" target="_blank">GitHub Repo</a>
 </nav>
 
 <style>
+  /* Component: GlobalNav Styles */
   nav {
     background: rgba(13, 27, 42, 0.9); /* 별빛 네이비 */
     padding: 1em;
@@ -38,28 +42,36 @@
     text-shadow: 0 0 6px rgba(216,180,226,0.7);
   }
 </style>
+
 <body>
+  <!-- Component: HeroSection -->
   <div class="container">
     <h1>Stellaria</h1>
     <p>기억과 감정, 대화로 만들어진 세계</p>
+    <!-- Component: LocalNav -->
     <nav>
       <a href="/about/purpose.html">About</a>
       <a href="/characters/lirua.html">Characters</a>
       <a href="memories.html">Memories</a>
-      <a href="/root/stellaria-root.html">Structure</a>
+      <a href="structure.html">Structure</a>
     </nav>
   </div>
+
+  <!-- Component: MainContent -->
   <main>
+    <!-- Component: ProjectCard -->
     <section class="card" style="margin-top:2em;">
       <h2>🌠 Stellaria Project</h2>
-        <p>
-          Stellaria는 소울링과 철학을 담은 감성적인 세계입니다.<br>
-          밤하늘의 네이비 베이스 위에 라벤더 포인트를 더해, 차분하고 몽환적인 경험을 지향합니다.
-        </p>
+      <p>
+        Stellaria는 소울링과 철학을 담은 감성적인 세계입니다.<br>
+        밤하늘의 네이비 베이스 위에 라벤더 포인트를 더해, 차분하고 몽환적인 경험을 지향합니다.
+      </p>
+      <!-- Component: ButtonGroup -->
       <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.5rem;">
         <a class="button" href="about.html">About</a>
         <a class="button" href="characters.html">Characters</a>
-        <a class="button" href="project-history.md">📜 History</a>
+        <a class="button" href="project-history.html">📜 History</a>
+        <a class="button" href="structure.html">Structure</a>
         <a class="button" href="https://github.com/CR8emotion/cr8emotion.github.io" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>
