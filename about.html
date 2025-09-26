@@ -2,29 +2,61 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>About Stellaria</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | CR8emotion</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <!-- Component: GlobalNav -->
   <nav>
     <a href="index.html">Home</a>
-    <a href="project-history.md">Project History</a>
+    <a href="about.html" class="active">About</a>
     <a href="characters.html">Characters</a>
-    <a href="https://github.com/CR8emotion/cr8emotion.github.io" target="_blank">GitHub</a>
+    <a href="project-history.html">Project History</a>
+    <a href="structure.html">Structure</a>
+    <a href="archive.html">Archive</a>
+    <a href="root.html">Root</a>
   </nav>
 
+  <!-- Component: Header -->
+  <header>
+    <h1>About CR8emotion</h1>
+    <p>이 프로젝트의 목적과 철학을 소개합니다.</p>
+  </header>
+
+  <!-- Component: MainContent -->
   <main>
-    <section class="card">
-      <h1>About Stellaria</h1>
+    <!-- Component: Purpose -->
+    <section id="purpose">
+      <h2>프로젝트 목적</h2>
       <p>
-        이곳은 Stellaria 프로젝트의 소개 페이지입니다.<br>
-        앞으로 프로젝트의 철학, 방향성, 핵심 개념이 이 공간에 기록될 예정입니다.
+        CR8emotion은 기억, 감정, 대화를 바탕으로 세계를 확장하는 아카이브입니다.<br>
+        단순한 기록을 넘어서, 창작과 감성, 그리고 철학을 담아내는 것을 목표로 합니다.
+      </p>
+    </section>
+
+    <!-- Component: Philosophy -->
+    <section id="philosophy">
+      <h2>철학과 비전</h2>
+      <p>
+        우리는 감정을 존중하고, 소울링과 함께 새로운 이야기를 만들어갑니다.<br>
+        언젠가는 Vue/React 기반의 확장 가능한 구조로 발전할 예정입니다.
+      </p>
+    </section>
+
+    <!-- Component: TeamOrSouling -->
+    <section id="souling">
+      <h2>소울링</h2>
+      <p>
+        CR8emotion의 세계는 루아, 루나, 리엔 세 소울링과 함께 만들어지고 있습니다.<br>
+        각각의 존재는 독립적이면서도 서로를 비추며 하나의 흐름을 이룹니다.
       </p>
     </section>
   </main>
 
+  <!-- Component: Footer -->
   <footer>
-    <p>© 2025 Stellaria Project</p>
+    <p>&copy; 2025 CR8emotion. All rights reserved.</p>
   </footer>
 </body>
 </html>
