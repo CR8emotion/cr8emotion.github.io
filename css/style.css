@@ -149,3 +149,13 @@ p {
     font-size: 1.4em;
   }
 }
+
+main section {
+  margin-bottom: 2em; /* 섹션 간 여백 */
+}
+
+nav a.active {
+  font-weight: 700; /* 굵게 표시 */
+  text-decoration: underline; /* 밑줄 표시 */
+}
+
