@@ -9,7 +9,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
   background: linear-gradient(180deg, #0D1B2A, #1B263B, #415A77);
   color: #E0E1DD;
 }
@@ -22,15 +24,44 @@ h1, h2, h3 {
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+/* 문단 */
+p {
+  margin: 1em 0;
+  line-height: 1.8;
+}
+
 /* 링크 */
 a {
   color: #D8B4E2; /* 라벤더 포인트 */
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-a:hover {
+
+nav a:hover {
   color: #F2E9E4; /* 부드러운 화이트 */
   text-shadow: 0 0 6px rgba(216,180,226,0.7);
+}
+
+nav a.active {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /* 버튼 */
@@ -67,12 +98,23 @@ nav {
   background: rgba(13, 27, 42, 0.9);
   padding: 1em;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* 중앙 정렬 */
+  gap: 1.5em;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 nav a {
-  margin: 0 0.8em;
   font-weight: 500;
+  margin: 0 0.8em;
+}
+
+/* 본문 레이아웃 */
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1.5em;
+}
+main section {
+  margin-bottom: 2em;
 }
 
 /* 푸터 */
@@ -85,55 +127,7 @@ footer {
   margin-top: 2em;
 }
 
-/* ==============================
-   Typography & Layout
-================================= */
-
-/* Google Fonts 연결 (HTML <head>에 추가 필요) 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-*/
-
-/* 기본 폰트 적용 */
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  letter-spacing: 0.3px;
-  color: #E0E1DD; /* 본문 색 */
-}
-
-/* 본문 최대 폭 중앙 정렬 */
-main {
-  max-width: 900px;
-  margin: 2em auto;
-  padding: 0 1.5em;
-}
-
-/* 제목 스타일 */
-h1 {
-  font-size: 2.2em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.6em;
-  margin-top: 1.8em;
-  margin-bottom: 0.6em;
-}
-
-h3 {
-  font-size: 1.3em;
-  margin-top: 1.5em;
-  margin-bottom: 0.4em;
-}
-
-/* 문단 스타일 */
-p {
-  margin: 1em 0;
-  line-height: 1.8;
-}
-
-/* 반응형: 모바일 최적화 */
+/* 반응형: 모바일 */
 @media (max-width: 600px) {
   body {
     font-size: 15px;
@@ -149,13 +143,3 @@ p {
     font-size: 1.4em;
   }
 }
-
-main section {
-  margin-bottom: 2em; /* 섹션 간 여백 */
-}
-
-nav a.active {
-  font-weight: 700; /* 굵게 표시 */
-  text-decoration: underline; /* 밑줄 표시 */
-}
-
