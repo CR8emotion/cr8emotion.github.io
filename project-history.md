@@ -33,6 +33,7 @@
 4. 작업 파일 세트 공유  
    - 개별 파일 업로드: index.html, about.html, characters.html, archive.html, root.html, structure.html, memories.html 계열, style.css, project-history.md 등  
    - 또는 하나의 ZIP 압축 파일로 업로드해도 확인 가능 (사이트 전체 구조를 파악할 때 특히 유용)
+
 ---
 
 Stellaria 프로젝트의 주요 변경 사항과 작업 진행 상황을 기록합니다.  
